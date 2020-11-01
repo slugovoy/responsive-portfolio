@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Meta data and links to external css, bootstrap -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>About Me Page</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
@@ -11,10 +12,17 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="assets/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <nav class="navbar navbar-expand{-xs|-sm|-md|-lg} navbar-light bg-info">
-      <a class="navbar-brand text-muted bg-light rounded p-1" href="index.html"
+    <!-- Creating navbar -->
+    <nav
+      class="navbar navbar-expand{-xs|-sm|-md|-lg} fixed-top navbar-light bg-info"
+    >
+      <a class="navbar-brand text-black bg-light rounded p-1" href="index.html"
         >Sergey Lugovoy</a
       >
       <button
@@ -27,6 +35,7 @@
         aria-label="Toggle navigation"
       >
         <span class="navbar-toggler-icon"></span>
+        <!-- Button with dropdown menu of links -->
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
@@ -38,62 +47,68 @@
         </div>
       </div>
     </nav>
+    <!-- Body of our webpage with pictures -->
     <section>
-      <div class="container-fluid">
-        <div class="row"></div>
-        <!--<div class="row tOP"</div>-->
-        <div class="col-sm-1 col-md-2 col-lg-2"></div>
-        <div
-          class="content col-xs-12 col-sm-9 col-md-7 col-lg-7 bg-white mt-5 mb-5 p-4"
-        >
-          <div class="row header pl-3">
+      <div class="container">
+        <div class="row">
+          <!-- Column with responsive size thet contains text and pictures -->
+          <div
+            class="content col-xs-12 col-sm-8 col-md-8 col-lg-8 bg-white mt-3 mb-5"
+          >
+            <!-- Header -->
             <header>
-              <h1>About Me</h1>
+              <div class="row text-info m-2 p-2">
+                <h1>About Me</h1>
+              </div>
             </header>
+            <!-- Actual box with picture and information -->
+            <div class="row border-top border-info p-2 m-1">
+              <p>
+                <img
+                  src="https://lh3.googleusercontent.com/Gcd2c-ZGQLGGH0x_KmVJlX8Uo4zm3ArCq7EpQ_uOzWs7rEjzCmfaX9on4eqCv6dRrftHZIKACpcsrwlW0uqTJiJIaPtHbtRWWc950ub7HCMW8OGjS16nqeUhZ-oTIcVqqXFKx-wlbFxRBcrIHjsS666pJQ7ZVueZ_rcmkAwdtrZUH4wuLzZVoNLc4XNf66M200x5511c0zXayo9nBzN1eRAhSY-icqbB6MmkF4eG6yWiVYxUPW1pmjFrSPZuJOXs9qoveBxgDmNLXY3EDIQwO_FpMiWX8c4-cwRhd7Ao787SOZ2wzQ-MH9rVKCNzazNhhQCeTOEIROG_-moKKwd0Rc00kmFhaDu89A2QoUj3B0jn7oUqNUf7c5n4mkeHR1TKsexcSJkCmGwUv8Tnnwuc2cjTxUOWlZlHy3nhbnqkN-qwG96D7eMiH1gj6mp0GY6VJ1anVPxbmtzIrcRktetZiHUK1B8FIypJaUEb3G_tzD2h0MrjG4TQUE4-iLN4VqyOiCDfr82iQ6zOQ0yZPVl-_93deVDERcFXX9jlh62IjpgPJcIqY0FdRP1TFFHzgI6E1P7JtRamUA0KLqXceB6eZrfNFH1VaNeJcu8eFZeYIdGjSWr9LgEMO_itpVI8Up0akmA_hdPkLHq66TDUkrpd43fX3I_8rOKoCaM-p_NY1xOEx6bRmOT9WtQrea6F2g=w1280-h960-no?authuser=0"
+                  alt="My Picture"
+                  class="my-image"
+                />
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+                perferendis quibusdam eaque laborum vitae eos omnis, consectetur
+                rem commodi recusandae. Quod, dolorem fuga rerum sapiente
+                laudantium est inventore magnam maiores. Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Aliquid maxime odit eos
+                itaque nihil! Ducimus similique hic, minima tempore beatae
+                commodi dicta itaque architecto libero consectetur odio,
+                perspiciatis blanditiis dignissimos! Lorem, ipsum dolor sit amet
+                consectetur adipisicing elit. Sapiente, maiores! Labore non,
+                corporis distinctio in laudantium voluptates repellendus
+                accusantium quae deleniti quaerat quidem aut qui, numquam quod
+                possimus cum nisi? Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Nemo eius, cumque assumenda nihil accusamus
+                quam ab eligendi ipsum itaque quis possimus asperiores velit ex
+                ipsa. Eligendi blanditiis maiores numquam perferendis.
+              </p>
+            </div>
+
+            <div class="row p-2 mt-4">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae
+                inventore, necessitatibus eum natus quibusdam quisquam itaque
+                perspiciatis temporibus pariatur, ea veritatis facere? Corrupti
+                consectetur ratione ea ullam itaque facilis voluptatem.
+              </p>
+            </div>
           </div>
-          <div class="row body">
-            <p>
-              <img
-                src="https://lh3.googleusercontent.com/aFfahzGOicGTFh5nnnLU-BQuv6mEenzT7-1HhzDkv-y9lWdVsUKKc-EslFHZ-x77lAWp3Tg9gB6zhSlLO81-ZcxGMRTtPO7Z9a9V7oZrwXVPNmn2Vt1MQmURmlzRna5RIR109j82Bg=w2400"
-                alt="My Picture"
-                class="img-thumbnail float-left mr-2"
-                width="250px"
-                height="150px"
-              />
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-              quos quod, repellendus ducimus dolores dolorem, unde, soluta dolor
-              similique perferendis reiciendis excepturi praesentium velit
-              aspernatur quas nulla voluptatem esse a. Lorem ipsum dolor sit
-              amet consectetur adipisicing elit. Suscipit officiis quaerat
-              maiores perferendis ipsum distinctio optio quod doloribus,
-              inventore eaque odit sunt minima illum, soluta reiciendis
-              consectetur ratione odio libero.
-            </p>
-          </div>
-          <div class="row mt-4">
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae
-              inventore, necessitatibus eum natus quibusdam quisquam itaque
-              perspiciatis temporibus pariatur, ea veritatis facere? Corrupti
-              consectetur ratione ea ullam itaque facilis voluptatem.
-            </p>
-          </div>
-        </div>
-        <div class="col-sm-2 col-md-3 col-lg-3"></div>
-        <div class="row bUttom"></div>
-        <div
-           id="footer" class="footer-copyright fixed-bottom text-center py-3 text-white bg-dark"
-        >
-          © 2020 Copyright
+          <!-- Responsive space of 4 columns that remains empty -->
+          <div class="col-sm-4 col-md-4 col-lg-4"></div>
         </div>
       </div>
     </section>
-
-    <!-- <div
+    <!-- Footer with copyrights -->
+    <footer
+      id="footer"
       class="footer-copyright fixed-bottom text-center py-3 text-white bg-dark"
     >
       © 2020 Copyright
-    </div>-->
+    </footer>
+    <!-- Javascript for dropdown menu -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
