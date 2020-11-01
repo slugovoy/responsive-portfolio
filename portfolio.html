@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Meta data and links to external css, bootstrap -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
@@ -10,11 +11,14 @@
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand{-xs|-sm|-md|-lg} navbar-light bg-info">
-      <a class="navbar-brand text-muted bg-light rounded p-1" href="#"
+    <!-- Creating navbar -->
+    <nav
+      class="navbar navbar-expand{-xs|-sm|-md|-lg} fixed-top navbar-light bg-info"
+    >
+      <a class="navbar-brand text-black bg-light rounded p-1" href="index.html"
         >Sergey Lugovoy</a
       >
       <button
@@ -27,6 +31,7 @@
         aria-label="Toggle navigation"
       >
         <span class="navbar-toggler-icon"></span>
+        <!-- Button with dropdown menu of links -->
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
@@ -38,64 +43,79 @@
         </div>
       </div>
     </nav>
+    <!-- Body of our webpage with pictures -->
     <div class="container">
       <div class="row">
-        <div class="col-md-1"></div>
-        <div class="col-md-8 bg-white mt-3 mb-5">
-          <div class="row text-info m-2">
-            <h1>Portfolio</h1>
-          </div>
-          <div class="row">
-            <div class="col-sm-12 col-md-6">
-              <img
-                class="image rounded m-2"
-                src="http://placekitten.com/200"
-                alt=""
-              />
+        <!-- Column with responsive size thet contains text and pictures -->
+        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 bg-white mt-3 mb-5">
+          <!-- Header -->
+          <header>
+            <div class="row text-info m-2 p-2">
+              <h1>Portfolio</h1>
             </div>
-            <div class="col-sm-12 col-md-6">
-              <img
-                class="image rounded m-2"
-                src="http://placekitten.com/200"
-                alt=""
-              />
+          </header>
+          <!-- Actual box with all pictures -->
+          <div class="content">
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-6">
+                <img
+                  class="image rounded m-3"
+                  src="https://lh3.googleusercontent.com/6lt9s30Ipkcb6od6Pujy0tClL1dK78SPTDC4WTR8ATvGVCSFz149RAc0a7jC7c7Egtl6vkQW0tGwHDI_VT-AZU-aHQQaFhUUOWr7PKVj_AcR-5Vc-ikSDSMeqn4KGTmBbtB5r6wzWADMm85Tp59hVEfIssxvoChXmU61gBZyt9-N8HBDObRDSoswjral59qPP7M55um-XrroUkL4SiuKa1wKG7CSXidODJp6PhBQSb2ZU0S8U5MSUbSDJlf3HgKPphmEdcktbDiPoiaMhMcpR-k6_lflF7Wh9l73_aqyIEoo7K6ZnfRcRZ4KGkVWBmEuzj9VfSeiHoSUfxPYiqGe_JAMIb-RJA90hawoyXjgbYETM6PadUEJJgCSibpwM0TlpY-Igm0u5SmaMQ00PCYdJ65xbArwuoEat9lsomNf0l9hMsbUhljIlX1QpUY3we0GI3wwLA1Hl63KhCfVPYG7OylBbtiS69vrm4CYXDm2afqEdNTbq0IKlk7jomTeTrWUC8T24tyOc7sMS-HFRU6TXjhR0Vw8bjPqCaUhb8NgF5mD3_QiIyEGfhSqcQcBB_Kn3L4KqEYOyGHrzqUE32QwZKZSFXMNIDLmjz0o74wTxkYFrHecuOQ-ekEhZzuXQrFAEoQ9oLmCrpu6MJnGeOHLaw6uR5gt0_ruuExn7DNmSGosILzb2DS5LDW7yIYbsw=w1048-h1396-no?authuser=0"
+                  alt="My Picture"
+                />
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-6">
+                <img
+                  class="image rounded m-3"
+                  src="https://lh3.googleusercontent.com/zVTRIj8_icihpqQQsWWr0ICOC4ztQ9C6-Kp9aMUpm04456IzTob60idJtWPIAL99FAdsabUfmoze94RGOf4CNqXf2otYuhBGV-7cFHiWOG1fUhl6O6_0RSlFN8iK-aYRXy1sx7drVv98wvZkSxs1HRdSdb7gbOkum7tjNX7oplmB4BYiugPcfVNvQ06XPDiscbODaRg3Fdw1pFbrjed9HHErZcj72LFm-FE1Kt5FE25ozV4ND3WBYFSQjQRRNuhSVzPkMEsTMvfHl-Kpl6AfcmXsYsHvoEbccAPgayquhaROpg_yMbnH_Jc7A1LnbTtUiBT7TIaa1XCS56QDo9N9NSxkaEiuigu9ziajzdVtCSL98hH0ZIR0fj9v01uFSKtznvKMfmph7pUPvYYfcsIUQib4cMsw44hETlNAFRyG6db8EJ_RfOK3uEZyAjI8cDQBv435O_9-2KsmqiTnHJKWolOHQud9Z9hcXX88hStqj8qqdp4juEd-7IPpA1y-HL77ok7eYp_-fGYzz6odIq8DymPj65KEBL9k8KAbLkddg4IZq10OEnPjbAbf-cBdUxqXBb_rUgkzOOGgnY11eRzMnzPIa5j1cWdKH8iyHfFXTuFHL6TaZeGtXoekOFQ-d8ZUR_3iAqN_AIgOOAiGxAeuwEiWNY2i2DspZGLSNI2BqkpjLyJRXhBDsBLBWfTiKg=w1048-h1396-no?authuser=0"
+                  alt="My Picture"
+                />
+              </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-12 col-md-6">
-              <img
-                class="image rounded m-2"
-                src="http://placekitten.com/200"
-                alt=""
-              />
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-6">
+                <img
+                  class="image rounded m-3"
+                  src="https://lh3.googleusercontent.com/s9aD9HekYqmE2lDq4v4VdH--8m5mQf8UTQ5yrZUZT_B-XFUkRnV0JjHH90VTJrZpJ1D0B4g74O4zwP7k94ekKjxoKjruDbhE1-5kHavrIw5LWKQyl3tn8qbISuTWcgLcVNq-gK-G39YM8Fm6B2hAcBLnwYgsh27j70hXB8P5QlbeKuIZB6EbghN7gvq41pAN7ezBtNDTp_c0VU-slQUia-knVox9xiNHMm8ru3lp5Mcoi611K1lAvkElBvLE6FKfKkQzKX4_qQhc2tP4u6JPmv_sYUIQ3rf6VhBrbe91mGAs0M1zNP5xw9goOPRN1h73N9MrZdeVPqA-XqkG3K0-kQZi6Yg1FBlXfXqq4hcXIgHhcKxBaTPAyxGIvtbrAgo8G-g1jzp65zHuTC1qlrbLubOFGpLO26-8JwjeJrOyQNBMZQQJUkPA0Un0irkunzjaOpxuQCzdPhNpflyR_FFMYyn2vsxAP7XGiiSZp5nI28ua3wqcNq6ewrfQAMP-_6UoDCU8-6dWz2UuTRWaSCPjhO350iwUpXMIC-sLyAAw319Qw3IGQ7X8dAOA3IcFsjeoOQaMr9Bln10ZRqHRt_c7qk8-nQop6W2_sytBEcDTxtqHW1sSvwLuJNSLO-uyjtjs79IiuItrKnNu2-vt2z7keFwAjDSUB6GYCEeURR-2GoQFfNMJoZqrZibguDYY_A=w1048-h1396-no?authuser=0"
+                  alt="My Picture"
+                />
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-6">
+                <img
+                  class="image rounded m-3"
+                  src="https://lh3.googleusercontent.com/giQAy9-Qmr2SDtf1GmyC_VM_7PZlouL_NaelrCE2bz1T6jg7WKUi1xpRBtdu0AT6BYL4pA9R-EijovAX63rX85bEFtaR595H1kxxzG1MceaUq4WU8x5_zeeHOnKQaKe5rWTml5jorhWbxnXglXOyeY--nO1_tFC7Hkzdvnhc7PjFzIYAGqBcJTuFJSyVLpVrAmhDk2Wu9N2eF3mstHBvcVg7NpB9chozkJYMpA0ODwy7dUvZgqMw2OMUveAm045ALY58olwKx0320_1Dfwg8Gj0qKPBySEaPY6bJ4eDGPRgiujn7_QxSukJD1zXcGzJG0qVRckagNlOqLpn3LSjP-V5mTfB26BxVDVQ9ei9_Pnx_G7mg5mrRLnJkAbZaOVMhvvH-t5fU8WqWflAMOi0KzXUDlFBiyym-sUoXVy0xRBQlknrglkN8FnE7E7nI-EzdTenWcD7WNdc2SuEExpAIZG7WlTqqig6g22KQmoZhh9euc23fxWe9RbQqkmc2gZQKbjzU2Gz_xwDM-DJ3IKi4OOqkcaOGX2vIGBE_ehHbDdLP5BGAapuE1PkVJ8bAvydNUkd5zy8Qz7zhup25Q9TBV73P_HdR8mCjU4hXBfcxai3c1I9DW9_aLOV7oepgoKZOMrDpPxChMKSQfFiWiXX4WyiFEe6lHQC2YIvpSksUbG_4_I7dRrtQblThmeKOmQ=w960-h1280-no?authuser=0"
+                  alt="My Picture"
+                />
+              </div>
             </div>
-            <div class="col-sm-12 col-md-6">
-              <img
-                class="image rounded m-2"
-                src="http://placekitten.com/200"
-                alt=""
-              />
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-6">
+                <img
+                  class="image rounded m-3"
+                  src="https://lh3.googleusercontent.com/7xLDpBEpHb6OLIOzzQqzs4sM9W8H3rwoBIBIPlN43lhDwcq2wRJkjN3omP4g2c4qKyFYtGrbaoSOYeJv9c4AHbLBK9byVJLc1gvjoBLWXtpqqjrCCPWfQiRuC9_EtRf3t_jVUZpNgev5jJowfVHOiBoitQxIuMI_GpslmaYhflilulhiqa3yIuQ0l75xObO_ofHzzUPl3n_sl6jYyLZoTHZHPOAC2b45rkt0PN5xjgR3xp6qkGUYvyba8hL_xfKaWsbiSauWPb-zKLjOj1IFFPXTgpF1rjddpYVpvx-Oh8COcgJOMA4pXGtleLgmT8Hqmw9b_u2iwRUg9A-mSBdWCsoYlFJu_FpWTfORU23LvmAJdTrKbxZhF-XSmSdR9-7yriUJ5VcLeOXhdoSS5FCKVZUkRSLBtfyuuxxklIhsq0hdjsOOxdj_JEEtiEgYg2xfwQXhvsPs0SkAwBLlfMiNo0T-qf0YuF2HZwz6zrWffp87f-U0aCA3m8ioStLD-lr3LUAvQZ606Iitq15Y1L0JvugUO_IAKxPZzma6hfGGj90e6sf_GdPsBuTHqFkP0cPqQIdV0lVP5I_0P2hBmUCvsgHnjR-X_EICgBrKmjmXxNYNWlkbpMTXDT8J73PlZvhjseA2zKr08K-vAbvjYdxH-miZAAvtWdMJV71BHOcHcE0XUkOo9jy1SjNXQ4NwoA=w1862-h1396-no?authuser=0"
+                  alt="My Picture"
+                />
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-6">
+                <img class="image rounded m-3"
+                src="https://lh3.googleusercontent.com/tqr1t40cXvlSn2lCtcik0E4F9119ycXh_W_DF976djliGDiQZ17V7qXP37IIp9N1hXyfzRL2JsAPXZXCdP1wT_3GfBu_LXZG7Rn530PQ-xFsrWA0Pa8i-euPQrRSUvLQOsVWQlDRffxMlhuNKA06jqCqfDeMgXbUg5fc2Mwx5G5MlJyoK_Cbi50WGZSsxSXIvx-bmsR6l_NKMOHiH5_kc6yBf1kK7_PEl2WemG99UYJHouiIyKmGpMpcgHLRI8Inmn3_4NIbC6_qB70lmQjX-HP3OAYCvF2eU3YpH_MTAcQPRUAXuqlWkYRrqoA1mFn174D8STOyYVOpLpUCdN971ZPcnbnk6ABEoWtUKsNG1NElslEcL1fu9kN5a8ZVIMOPpesr9eebbChargwF0hLOIgiaVijfNGu9082B1tKE-CZECT5KN9FXqhdoLsXB1uF7WTkzQgp-pE8zxkVTl7AJ385_mryBzEAs-ILzQT-am0UCbf1f8wm8fX5MUM7nkVMguVbJA2RCH6mDr9nktoYbV218ecOuo8FHbMIU45yp0raIMrTIUc4MOVFD5s8Rjg8MuMzmv-WNij2vZEtlW_GNnlzM8z5icBvFHUzUeF9_k96bG2HNaEHKqXoqfNhkwUfsbHoBUJkmaVw4tn7pSqcZj5DG4jy41Mv3pIDfikkqdz9iVeaxZoPh1K3GXY2pgA=w1860-h1396-no?authuser=0"
+                alt="My Picture"
+                />
+              </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-12 col-md-6">
-              <img
-                class="image rounded m-2"
-                src="http://placekitten.com/200"
-                alt=""
-              />
-            </div>
-            <div class="col-sm-12 col-md-6"></div>
           </div>
         </div>
-        <div class="col-md-3"></div>
+        <!-- Responsive space of 4 columns that remains empty -->
+        <div class="col-sm-4 col-md-4 col-lg-4"></div>
       </div>
     </div>
-    <div
+    <!-- Footer with copyrights -->
+    <footer
       class="footer-copyright fixed-bottom text-center py-3 text-white bg-dark"
     >
       © 2020 Copyright
-    </div>
+    </footer>
+    <!-- Javascript for dropdown menu -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
