@@ -4,9 +4,10 @@ You can navigate through using multiple links.
 
 Navbar contains one direct link "Sergey Lugovoy" and button with dropdown menu(appears when you click on it).
 
+
+
 ![navigation bar](assets/images/Screenshot2.png)
 
-Each link will send you to the different page of portfolio
 
 
 Code for button and dropdown menu
@@ -14,6 +15,10 @@ Code for button and dropdown menu
 
 
 ![Button's code](assets/images/Screenshot6.png)
+
+Each link will send you to the different page of portfolio
+
+
 
 
 
