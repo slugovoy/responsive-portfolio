@@ -24,6 +24,7 @@
       <a class="navbar-brand text-black bg-light rounded p-1" href="index.html"
         >Sergey Lugovoy</a
       >
+      <!-- Button with dropdown menu of links -->
       <button
         class="navbar-toggler border"
         type="button"
@@ -34,14 +35,14 @@
         aria-label="Toggle navigation"
       >
         <span class="navbar-toggler-icon"></span>
-        <!-- Button with dropdown menu of links -->
+        <!-- Dropdown navbar -->
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link active" href="index.html"
-            >About Me <span class="sr-only">(current)</span></a
+          <a class="nav-link active" href="index.html">About Me</a>
+          <a class="nav-link active" href="contact.html"
+            >Contact <span class="sr-only">(current)</span></a
           >
-          <a class="nav-link" href="contact.html">Contact</a>
           <a class="nav-link" href="portfolio.html">Portfolio</a>
         </div>
       </div>
@@ -51,7 +52,9 @@
       <div class="container">
         <div class="row">
           <!-- Column with responsive size thet contains text and pictures -->
-          <div class="content col-xs-12 col-sm-8 col-md-8 col-lg-8 bg-white mt-3 mb-5">
+          <div
+            class="content col-xs-12 col-sm-9 col-md-9 col-lg-9 bg-white mt-3 mb-5"
+          >
             <!-- Header -->
             <header>
               <div class="row text-info m-2 p-2">
@@ -68,7 +71,6 @@
                   class="form-control"
                   id="name1"
                   placeholder="Name"
-                  aria-describedby="emailHelp"
                 />
               </div>
               <!-- Prompting user Email -->
@@ -79,14 +81,12 @@
                   class="form-control"
                   id="exampleInputEmail1"
                   placeholder="Email"
-                  aria-describedby="emailHelp"
                 />
               </div>
               <!-- Prompting user to type his message -->
               <div class="form-group">
                 <label for="message">Message</label>
                 <textarea
-                  type="text"
                   name="message"
                   class="form-control"
                   id="message"
@@ -102,15 +102,11 @@
               </button>
             </div>
           </div>
-          <!-- Responsive space of 4 columns that remains empty -->
-          <div class="col-sm-4 col-md-4 col-lg-4"></div>
         </div>
       </div>
     </section>
     <!-- Footer with copyrights -->
-    <footer
-      class="footer-copyright fixed-bottom text-center py-3 text-white"
-    >
+    <footer class="footer-copyright fixed-bottom text-center py-3 text-white">
       © 2020 Copyright
     </footer>
     <!-- Javascript for dropdown menu -->
