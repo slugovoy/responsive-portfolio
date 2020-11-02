@@ -35,4 +35,4 @@ Link "Portfolio" will take you to this page
 ![Portfolio](assets/images/Screenshot5.png)
 
 
-And if you tap this link you can see deployed project.
+And if you tap this link  https://slugovoy.github.io/responsive-portfolio/ you can see deployed project.
