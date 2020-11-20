@@ -15,6 +15,9 @@ h1 {
     font-family: 'Oswald', sans-serif;
     text-decoration: underline;
 }
+h5{
+    text-decoration: underline;
+}
 /* Set width and decoration for images */
 img {
     width: 90%;
